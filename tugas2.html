@@ -9,7 +9,7 @@
 <body>
 <form action="#">
 <fieldset align="center">
-    <legend>Create an account</legend>
+    <legend>Create an account for reservation</legend>
     <table align="center">
         <tr align="left">
             <td><label for="email">Email</label></td>
@@ -52,16 +52,18 @@
             </td>
         </tr>
         <tr align="left">
-            <td><label for="ttl">Date of birth:</label></td>
-            <td><input type="date" id="dob" name="dob"></td>
-        </tr>
-        <tr align="left">
             <td><label for="gender">Age:</label></td>
             <td>
                 <input type="radio" name="age-group" value="below17"> < 17
                 <input type="radio" name="age-group" value="17-25"> 17-25
                 <input type="radio" name="age-group" value="above25"> > 25
             </td>
+        </tr>
+        <tr align="left">
+            <td><label for="phone">Phone number:</label></td>
+            <td><input type="tel" id="phone" name="phone" placeholder="0123-4567-8901" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+
+
         </tr>
         <tr align="left">
             <td><label for="alamat">Address:</label></td>
@@ -85,22 +87,24 @@
         </tr>
    
         <tr align="left">
-            <td><label for="Informasi yang Disukai">What are you interested in?</label></td>
+            <td><label for="Informasi yang Disukai">What do you usually like to do?</label></td>
             <td><justify>
-                <p><input type="checkbox" id="" name="berita"><label for="berita">News</label>
-                <input type="checkbox" id="Sports" name="Sports"><label for="Sports">Sports</label>
-                <input type="checkbox" id="Entertainment" name="Entertainment" value="Entertainment"/>Entertainment</label>
-                <input type="checkbox" id="Science & Tech" name="Science & Tech" value="Science & Tech"/>Science & Tech</label></p>
+                <p><input type="checkbox" id="" name="workshop"><label for="workshop">Workshop</label>
+                <input type="checkbox" id="Seminar" name="Seminar"><label for="seminar">Seminar</label>
+                <input type="checkbox" id="Meetings" name="Meetings" value="Meetings"/>Meetings</label>
+                <input type="checkbox" id="Work individually" name="Work individually" value="Work individually"/>Work individually</label></p>
 
-                <p><input type="checkbox" id="Literature" name="Literature" value="Literature"/>Literature</label>
-                <input type="checkbox" id="Music" name="Music" value="Music">Music</label>
-                <input type="checkbox" id="Startups" name="Startups" value="Startups">Startups</label>
-                <input type="checkbox" id="Politics" name="Politics" value="Politics">Politics</label></p>
-
-                <p><input type="checkbox" id="Sci-fi & Fantasy" name="Sci-fi & Fantasy" value="Sci-fi & Fantasy"/>Sci-fi & Fantasy</label>
-                <input type="checkbox" id="Movie" name="Movie" value="Movie">Movie</label>
-                <input type="checkbox" id="Books" name="Books" value="Books">Books</label>
-                <input type="checkbox" id="Comedy" name="Comedy" value="Comedy">Comedy</label></p>
+                <p><input type="checkbox" id="Networking" name="Networking" value="Networking"/>Networking</label>
+                <input type="checkbox" id="Study or read" name="Study or read" value="Study or read">Study or read</label>
+                <input type="checkbox" id="Meet friends" name="Meet friends" value="Meet friends">Meet friends</label></p>
+                
+                <p><input type="checkbox" id="Just relax with calm music" name="Just relax with calm music" value="Just relax with calm music">Just relax with calm music</label>
+                <input type="checkbox" id="Eat or drink" name="Eat or drink" value="Eat or drink"/>Eat or drink</label>
+                <input type="checkbox" id="Watch movie" name="Watch movie" value="Watch movie">Watch movie</label></p>
+                
+                <p><input type="checkbox" id="Playing games" name="Playing games" value="Playing games">Playing games</label>
+                <input type="checkbox" id="Remote work" name="Remote Work" value="Remote work">Remote work</label>
+                <input type="checkbox" id="Write blog posts or content " name="Write blog posts or content " value="Write blog posts or content ">Write blog posts or content </label></p>
             </justify></td>
         </tr>
     </table>
