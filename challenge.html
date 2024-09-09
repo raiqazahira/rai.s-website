@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Challenge</title>
+    </head>
+    <body>
+<form action="#">
+<fieldset>
+        <legend>Akun</legend>
+        <table>
+            <tr>
+                <td><label for="uname">Username(*)</label></td>
+                <td><input type="text" id="uname" name="username" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password(*)</label></td>
+                <td><input type="password" id="pass" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Konfirmasi Password(*)</label></td>
+                <td><input type="password" id="pass" name="password" required></td>
+            </tr>
+            <tr>
+              <td>  <label for="email">Email</label></td>
+               <td> <input type="email"><br></td>
+            </tr>
+        </table>
+</fieldset>
+
+<fieldset>
+    <legend>Data</legend>
+    <table>
+        <tr>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br>
+        </tr>
+        <tr>
+            <td><label for="Jenis Kelamin">Jenis Kelamin</label></td>
+            <td>
+                <input type="radio" id="lk" name="jk" value="laki-laki"><label for="lk">Laki-Laki</label><br>
+                <input type="radio" id="pr" name="jk" value="Perempuan"><label for="pr">Perempuan</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Informasi yang Disukai">Informasi yang Disukai</label></td>
+            <td>
+                <input type="checkbox" id="Olahraga" name="Olahraga"><label for="Olahraga">Olahraga</label><br>
+                <input type="checkbox" id="Travelling" name="Travelling"><label for="Travelling">Travelling</label><br>
+                <input type="checkbox" id="Kesehatan" name="Kesehatan" value="Kesehatan"/>Kesehatan</label><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Program Studi</td>
+            <td>
+                <select name="prodi" id="prodi">
+                    <option value="#">--Pilih Salah Satu--</option>
+                    <option value="ilkom">S1 Ilmu Komputer</option>
+                    <option value="ilkom">S1 Teknologi Informasi</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="alamat"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+        </table>
+    </form>
+</fieldset>
+<table>
+    <tr>
+        <td></td>
+        <td>
+            <button type="submit">Sign In</button>
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>

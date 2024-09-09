@@ -1,0 +1,19 @@
+b {
+     color:hotpink;
+}
+.judul{
+    color:deeppink;
+    font-size:16px;
+    border:2px;
+    border-color:darkred;
+    background-color: lightskyblue;
+}
+#dftr-pilihan{
+    background-color: cornsilk;
+    color:lightseagreen;
+    border:20px;
+    border-color:blue;
+}
+.spesial{
+    font-weight: :900;
+ }
