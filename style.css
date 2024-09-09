@@ -34,7 +34,7 @@ fieldset:before {
 legend {
     color: #0492c2;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: center;
     background-color: #FFEBEE;
     padding: 5px 8px;
@@ -49,7 +49,7 @@ table {
 
 td {
     padding: 10px;
-    font-size: medium; 
+    font-size: 0.88em; 
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea, select {
@@ -62,7 +62,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea, selec
 }
 
 select option {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -70,7 +70,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 button {
-    background-color: #FFCCBC;
+    background-color: #FFAB91;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -79,11 +79,6 @@ button {
     font-family: 'Comic Sans MS';
     font-size: 1.1em;
 }
-
-button:hover {
-    background-color: #FFAB91;
-}
-
 
 label {
     font-weight: bold;
