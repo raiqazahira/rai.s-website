@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale">
     <title>Tugas 2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <form action="#">
 <fieldset align="center">
-    <legend>Already have an account? </legend>
+    <legend>Create an account</legend>
     <table align="center">
         <tr align="left">
             <td><label for="email">Email</label></td>
-            <td><input type="email"><br></td>
+            <td><input type="email"></td>
         </tr>
         <tr align="left">
             <td><label for="uname">Username</label></td>
@@ -44,31 +45,27 @@
             <td><input type="text" id="nama" name="nama"></td>
         </tr>
         <tr align="left">
-            <td><label for="Jenis Kelamin">Choose your gender:</label></td>
-        </tr>
-        <tr align="left">
+            <td><label for="gender">Choose your gender:</label></td>
             <td>
-                <input type="radio" id="lk" name="jk" value="laki-laki"><label for="lk">Male</label>
-                <input type="radio" id="pr" name="jk" value="Perempuan"><label for="pr">Female</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
             </td>
         </tr>
         <tr align="left">
-            <td><label for="umur">Age:</label></td>
-        </tr>
-        <tr align="left">
+            <td><label for="gender">Age:</label></td>
             <td>
-                <input type="radio" id="underseventeen" name="jk" value="dibawahtujuhbelas"><label for="underseventeen"> < 17</label>
-                <input type="radio" id="seventeen" name="jk" value="tujuhbelas"><label for="seventeen"> 17-25 </label>
-                <input type="radio" id="uptwenty" name="jk" value="dualima"><label for="uptwenty"> >25 </label>
+                <input type="radio" name="age-group" value="below17"> < 17 tahun
+                <input type="radio" name="age-group" value="17-25"> 17-25 tahun
+                <input type="radio" name="age-group" value="above25"> > 25 tahun
             </td>
         </tr>
         <tr align="left">
-            <td>Address:</td>
-            <td><textarea name="address" rows="4" cols="30"></textarea>
+            <td><label for="alamat">Address:</label></td>
+            <td><textarea name="address" rows="4" cols="30">--write your address here--</textarea>
             </td>
         </tr>
         <tr align="left">
-            <td>Occupation:</td>
+            <td><label for="pekerjaan">Occupation:</label></td>
             <td>
                 <select name="pekerjaan" id="pekerjaan">
                     <option value="#"><label for="--Choose one option--">--Choose one option--</label></option>
@@ -85,36 +82,28 @@
    
         <tr align="left">
             <td><label for="Informasi yang Disukai">What are you interested in?</label></td>
-        </tr>
-        <tr align="left">
             <td>
-                <input type="checkbox" id="" name="berita"><label for="berita">News</label>
+                <p><input type="checkbox" id="" name="berita"><label for="berita">News</label>
                 <input type="checkbox" id="Sports" name="Sports"><label for="Sports">Sports</label>
                 <input type="checkbox" id="Entertainment" name="Entertainment" value="Entertainment"/>Entertainment</label>
-                <input type="checkbox" id="Science & Tech" name="Science & Tech" value="Science & Tech"/>Science & Tech</label>
-            </td>
-        </tr>
-        <tr align="left">
-            <td>
-                <input type="checkbox" id="Literature" name="Literature" value="Literature"/>Literature</label>
+                <input type="checkbox" id="Science & Tech" name="Science & Tech" value="Science & Tech"/>Science & Tech</label></p>
+
+                <p><input type="checkbox" id="Literature" name="Literature" value="Literature"/>Literature</label>
                 <input type="checkbox" id="Music" name="Music" value="Music">Music</label>
                 <input type="checkbox" id="Startups" name="Startups" value="Startups">Startups</label>
-                <input type="checkbox" id="Politics" name="Politics" value="Politics">Politics</label>
-            </td>
-        </tr>
-        <tr align="left">
-            <td>
-                <input type="checkbox" id="Sci-fi & Fantasy" name="Sci-fi & Fantasy" value="Sci-fi & Fantasy"/>Sci-fi & Fantasy</label>
+                <input type="checkbox" id="Politics" name="Politics" value="Politics">Politics</label></p>
+
+                <p><input type="checkbox" id="Sci-fi & Fantasy" name="Sci-fi & Fantasy" value="Sci-fi & Fantasy"/>Sci-fi & Fantasy</label>
                 <input type="checkbox" id="Movie" name="Movie" value="Movie">Movie</label>
                 <input type="checkbox" id="Books" name="Books" value="Books">Books</label>
-                <input type="checkbox" id="Comedy" name="Comedy" value="Comedy">Comedy</label>
+                <input type="checkbox" id="Comedy" name="Comedy" value="Comedy">Comedy</label></p>
             </td>
         </tr>
     </table>
     </form>
 </fieldset>
-<table>
-    <tr>
+<table align="center">
+    <tr align="center">
         <td>
             <button type="submit">Sign-in</button>
             <button type="reset">Reset</button>

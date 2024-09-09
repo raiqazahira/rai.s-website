@@ -1,0 +1,107 @@
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: #FFF8E1;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    position: relative;
+}
+
+fieldset {
+    border: 8px dashed #aad6fa;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #FCE4EC;
+    position: relative;
+}
+
+fieldset:before {
+    content: "🌸";
+    font-size: 2em;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+legend {
+    color: #0492c2;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    background-color: #FFEBEE;
+    padding: 5px 8px;
+    border-radius: 10px;
+    border: 2px solid #FFCDD2;
+}
+
+table {
+    width: 100%;
+    margin-top: 5px;
+}
+
+td {
+    padding: 10px;
+    font-size: medium; 
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #F48FB1;
+    border-radius: 10px;
+    background-color: #FFFDE7;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+select option {
+    font-size: 1.2em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #FFCCBC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Comic Sans MS';
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #FFAB91;
+}
+
+
+label {
+    font-weight: bold;
+    color: #F06292;
+}
+
+td label {
+    margin-right: 10px;
+}
+
+table tr td:first-child {
+    width: 150px;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    font-family: 'Comic Sans MS';
+    font-size: 1em;
+    font-weight: normal;
+    color:black;
+}
+
