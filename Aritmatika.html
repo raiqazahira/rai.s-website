@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmatika</title>
+</head>
+
+    <form name="frmhitung">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="bil1">Input bilangan 1</label></td>
+                    <td><input type="number" name="bilangan1" placeholder="Angka Pertama" id="bil1"></td>
+                </tr>
+                <tr>
+                    <td><label for="bil2">Input bilangan 2</label></td>
+                    <td><input type="number" name="bilangan2" placeholder="Angka Kedua" id="bil2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" onclick="hitung('tambah')" value="+">
+                        <input type="button" onclick="hitung('kurang')" value="-">
+                        <input type="button" onclick="hitung('kali')" value="×">
+                        <input type="button" onclick="hitung('bagi')" value="/">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script>
+        function hitung(opsi){
+            let bil1=parseInt(document.frmhitung.bilangan1.value);
+            let bil2=parseInt(document.frmhitung.bilangan2.value);
+
+            if (opsi=='tambah'){
+            hasiltambah = bil1 + bil2
+            alert(bil1+" + "+bil2+" = "+hasiltambah)
+            } else if(opsi=='kurang')
+            {
+                hasilkurang = bil1 - bil2
+                alert(bil1+" - "+bil2+" = "+hasilkurang)
+            
+            }else if(opsi=='kali'){
+                hasilkali = bil1 * bil2
+                alert(bil1+" × "+bil2+" = "+hasilkali)
+            }else{
+                hasilbagi = bil1 / bil2
+                alert(bil1+" / "+bil2+" = "+hasilbagi)
+            }
+        }
+    </script>
+
+</html>

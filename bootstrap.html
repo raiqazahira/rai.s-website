@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Belajar Flexbox</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <!--letak dari navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand" href="#">Proweb</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          Tutorial
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">HTML</a>
+                          <a class="dropdown-item" href="#">CSS</a>
+                          <a class="dropdown-item" href="#">Javascript</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">PHP</a>
+                          <a class="dropdown-item" href="#">MySQL</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Hubungi</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+        
+                    <button class="btn btn-outline-primary  " type="submit">Daftar</button>
+                    <button class="btn btn-outline-success ml-2" type="submit">Masuk</button>
+                  </form>
+                </div>
+              </nav>
+            <div class="row">
+                <div class="col align-self-center">
+                    <h1 style="font-family: 'Comic Neue';">Hai!<br/>Selamat datang di Proweb</h1>
+                    <p class="mt-5 mb-4 ">
+                        Belajar pemograman web mulai dari HTML, CSS, Javascript, PHP, dan MySQL
+                    </p >
+                    <a class="btn btn-outline-primary" href="#" role="button">Mulai Sekarang</a>
+                </div>
+                <div class="col d-none d-lg-block d-xl-block">
+                    <img src="wall.jpg" alt="" width="600">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery371.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

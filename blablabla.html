@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskon Operator</title>
+  <script>
+    function calculateDiscount() {
+      // Ambil nilai dari input number
+      const amount = parseFloat(document.getElementById('number').value);
+      // Ambil nilai dari radio button yang dipilih
+      const operator = document.querySelector('input[name="operator"]:checked');
+
+      // Validasi input
+      if (isNaN(amount) || amount <= 0) {
+        alert('Masukkan nominal yang valid.');
+        return;
+      }
+      if (!operator) {
+        alert('Pilih operator terlebih dahulu.');
+        return;
+      }
+
+      // Tentukan diskon berdasarkan operator yang dipilih
+      let discount;
+      switch (operator.value) {
+        case 'telkomsel':
+          discount = amount * 0.10; // 10% diskon
+          break;
+        case 'indosat':
+          discount = amount * 0.05; // 5% diskon
+          break;
+        case 'XL':
+          discount = amount * 0.02; // 2% diskon
+          break;
+        default:
+          discount = 0;
+      }
+
+      // Tampilkan hasil diskon
+      alert('Hasil diskon: Rp ' + discount.toFixed(2));
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Hitung Diskon Pulsa</h2>
+  <form>
+    <input type="number" id="number" name="number" placeholder="Nominal Isi Pulsa" required><br>
+    <input type="radio" name="operator" value="telkomsel">Telkomsel
+    <input type="radio" name="operator" value="indosat">Indosat
+    <input type="radio" name="operator" value="XL">XL<br>
+    <button type="button" onclick="calculateDiscount()">Biaya</button>
+  </form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskon Operator</title>
+  <script>
+    function calculateDiscount() {
+      // Ambil nilai dari input number
+      const amount = parseFloat(document.getElementById('number').value);
+      // Ambil nilai dari radio button yang dipilih
+      const operator = document.querySelector('input[name="operator"]:checked');
+
+      // Validasi input
+      if (isNaN(amount) || amount <= 0) {
+        alert('Masukkan nominal yang valid.');
+        return;
+      }
+      if (!operator) {
+        alert('Pilih operator terlebih dahulu.');
+        return;
+      }
+
+      // Tentukan diskon dan biaya setelah diskon berdasarkan operator yang dipilih
+      let discount;
+      let discountPercentage;
+      switch (operator.value) {
+        case 'telkomsel':
+          discountPercentage = 0.10; // 10% diskon
+          break;
+        case 'indosat':
+          discountPercentage = 0.05; // 5% diskon
+          break;
+        case 'XL':
+          discountPercentage = 0.02; // 2% diskon
+          break;
+        default:
+          discountPercentage = 0;
+      }
+
+      discount = amount * discountPercentage; // Hitung diskon
+      const finalAmount = amount - discount; // Hitung biaya setelah diskon
+
+      // Tampilkan hasil diskon dan biaya setelah diskon
+      alert(`Diskon: Rp ${discount.toFixed(2)}, Biaya: Rp ${finalAmount.toFixed(2)}`);
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Hitung Diskon Pulsa</h2>
+  <form>
+    <input type="number" id="number" name="number" placeholder="Nominal Isi Pulsa" required><br>
+    <input type="radio" name="operator" value="telkomsel">Telkomsel
+    <input type="radio" name="operator" value="indosat">Indosat
+    <input type="radio" name="operator" value="XL">XL<br>
+    <button type="button" onclick="calculateDiscount()">Biaya</button>
+  </form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskon Operator</title>
+  <script>
+    function calculateDiscount() {
+      // Ambil nilai dari input number
+      const amount = parseFloat(document.getElementById('number').value);
+      // Ambil nilai dari radio button yang dipilih
+      const operator = document.querySelector('input[name="operator"]:checked');
+
+      // Validasi input
+      if (isNaN(amount) || amount <= 0) {
+        alert('Masukkan nominal yang valid.');
+        return;
+      }
+      if (!operator) {
+        alert('Pilih operator terlebih dahulu.');
+        return;
+      }
+
+      // Tentukan diskon berdasarkan operator yang dipilih
+      let discountPercentage;
+      switch (operator.value) {
+        case 'telkomsel':
+          discountPercentage = 0.10; // 10% diskon
+          break;
+        case 'indosat':
+          discountPercentage = 0.05; // 5% diskon
+          break;
+        case 'XL':
+          discountPercentage = 0.02; // 2% diskon
+          break;
+        default:
+          discountPercentage = 0;
+      }
+
+      // Hitung diskon dan biaya setelah diskon
+      const discount = amount * discountPercentage;
+      const finalAmount = amount - discount;
+
+      // Tampilkan hasil diskon dan biaya setelah diskon dengan persentase
+      alert(`Diskon ${discountPercentage * 100}%, Biaya: Rp ${finalAmount.toFixed(2)}`);
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Hitung Diskon Pulsa</h2>
+  <form>
+    <input type="number" id="number" name="number" placeholder="Nominal Isi Pulsa" required><br>
+    <input type="radio" name="operator" value="telkomsel">Telkomsel
+    <input type="radio" name="operator" value="indosat">Indosat
+    <input type="radio" name="operator" value="XL">XL<br>
+    <button type="button" onclick="calculateDiscount()">Biaya</button>
+  </form>
+
+</body>
+</html>
+

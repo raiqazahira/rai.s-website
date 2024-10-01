@@ -1,8 +1,6 @@
 body {
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
     background-color: #FFF8E1;
-    margin: 0;
-    padding: 0;
     line-height: 1.6;
 }
 
@@ -12,7 +10,6 @@ form {
     padding: 20px;
     background-color: #FFFFFF;
     border-radius: 15px;
-    position: relative;
 }
 
 fieldset {
@@ -23,7 +20,7 @@ fieldset {
     position: relative;
 }
 
-fieldset:before {
+fieldset::before {
     content: "🌸";
     font-size: 2em;
     position: absolute;
@@ -52,7 +49,7 @@ td {
     font-size: 0.88em; 
 }
 
-input[type="text"], input[type="email"], input[type="password"], textarea, select {
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"],textarea, select {
     width: 100%;
     padding: 10px;
     border: 2px solid #F48FB1;

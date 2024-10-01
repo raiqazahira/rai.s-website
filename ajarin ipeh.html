@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajarin Ipeh</title>
+    <button type="home"><a href="ajarin ipeh.html" style="color:blue" target="blank">
+        Home</a></button>
+    <button type="contact"><a href="https://wa.me/6281360775868" style="color:blue" target="blank">
+            Contact us </a></button>
+    <button type="about"><a href="https://www.instagram.com/raiitatouille/?utm_source=ig_web_button_share_sheet"
+            style="color:blue" target="blank">
+            About us </a></button>
+    <button type="profile"><a href="https://raiqazahira.github.io/rai.s-website/" style="color:blue" target="blank">
+            Our Profile </a></button>
+    <style>
+        body{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:lightskyblue;
+        }
+        button{
+            padding:10px 20px;
+            background-color: rgb(245, 186, 163);
+            font-family:'Comic sans MS';
+            border-radius: 2em;
+            border-color: azure;
+        }
+        h1{
+            font-family: 'Georgia';
+        }
+        fieldset{
+            padding: 50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <h1>My Profile</h1>
+        <fieldset>
+            <legend>Akun</legend>
+            <table>
+                <tr>
+                    <td><label for="uname">Username</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password(*)</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Konfirmasi Password(*)</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Data</legend>
+            <table>
+                <tr>
+                    <td><label for="NIM">NIM</label></td>
+                    <td><input type="text" id="NIM" name="NIM"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Nama</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="jurusan">Jurusan</label></td>
+                    <td><select name="jurusan" id="jurusan">
+                            <option value="#" disabled selected><label for="Pilih salah satu">--Pilih salah satu--</label></label>
+                            </option>
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                            <option value="Teknologi Informasi">Teknologi Informasi</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="jk">Jenis Kelamin</label></td>
+                    <td>
+                        <input type="radio" name="jk" value="lk">Laki-Laki
+                        <input type="radio" name="jk" value="pr">Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobi">Hobi</label></td>
+                    <td>
+                        <input type="checkbox" id="Olahraga" name="Olahraga"><label for="Olahraga">Olahraga</label>
+                        <input type="checkbox" id="Travelling" name="Travelling"><label for="Travelling">Travelling</label>
+                        <input type="checkbox" id="Kesehatan" name="Kesehatan"><label for="Kesehatan">Kesehatan</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

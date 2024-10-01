@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator</title>
+</head>
+<body>
+  <form>
+    <input type="number" id="number" name="number" placeholder="Nominal Isi Pulsa" required><br>
+    <input type="radio" name="operator" value="telkomsel">Telkomsel
+    <input type="radio" name="operator" value="indosat">Indosat
+    <input type="radio" name="operator" value="XL">XL<br>
+    <button type="button" onclick="calculateDiscount()">Biaya</button>
+    </tr>
+  </form>
+  <script>
+    function calculateDiscount() {
+      const amount = parseFloat(document.getElementById('number').value);
+      const operator = document.querySelector('input[name="operator"]:checked');
+
+      let discountPercentage;
+      switch (operator.value) {
+        case 'telkomsel':
+          discountPercentage = 0.10;
+          break;
+        case 'indosat':
+          discountPercentage = 0.05;
+          break;
+        case 'XL':
+          discountPercentage = 0.02;
+          break;
+      }
+
+      const discount = amount * discountPercentage;
+      const finalAmount = amount - discount;
+
+      alert(`Diskon ${discountPercentage * 100}%, Biaya: Rp ${finalAmount.toFixed(2)}`);
+    }
+  </script>
+</body>
+</html>
